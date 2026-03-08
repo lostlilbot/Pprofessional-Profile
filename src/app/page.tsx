@@ -62,43 +62,48 @@ export default function Home() {
 
   const expertise = [
     {
+      category: "APTIS",
+      description: "British Council's standardized English proficiency assessment system - program implementation, examiner training, and results analysis for institutional credentialing.",
+      icon: "📋",
+    },
+    {
       category: "K-12 Curriculum",
-      description: "Comprehensive elementary and secondary education frameworks aligned with international standards.",
+      description: "Comprehensive elementary and secondary education frameworks aligned with international standards, including scope and sequence design, assessment blueprints, and differentiated instruction strategies.",
       icon: "📚",
     },
     {
       category: "Canadian Curriculum",
-      description: "Canadian educational standards and assessment methodologies for global implementation.",
+      description: "Canadian educational standards and assessment methodologies for global implementation, with expertise in provincial curricula alignment and credit recognition frameworks.",
       icon: "🍁",
     },
     {
       category: "South African Curriculum",
-      description: "CAPS-aligned curricula with contextual adaptation for diverse educational contexts.",
+      description: "CAPS-aligned curricula with contextual adaptation for diverse educational contexts, focusing on language development and content integration across the curriculum.",
       icon: "🌍",
     },
     {
       category: "Technical English",
-      description: "Specialized technical vocabulary and communication skills for engineering and technology sectors.",
+      description: "Specialized technical vocabulary and communication skills for engineering and technology sectors, including documentation, report writing, and technical presentation skills.",
       icon: "⚙️",
     },
     {
       category: "Aviation English",
-      description: "ICAO-compliant aviation English training for pilots, air traffic controllers, and aviation professionals.",
+      description: "ICAO-compliant aviation English training for pilots, air traffic controllers, and aviation professionals, covering radiotelephony, emergency procedures, and ATC communications.",
       icon: "✈️",
     },
     {
       category: "Medical English",
-      description: "Healthcare-specific English communication training for medical professionals and institutions.",
+      description: "Healthcare-specific English communication training for medical professionals and institutions, including patient consultation, clinical documentation, and interdisciplinary team communication.",
       icon: "🏥",
     },
     {
       category: "Legal English",
-      description: "Legal terminology and professional communication for legal practitioners and law students.",
+      description: "Legal terminology and professional communication for legal practitioners and law students, covering contract law, litigation, and corporate legal frameworks.",
       icon: "⚖️",
     },
     {
       category: "Corporate ESL",
-      description: "Business English programs tailored for corporate environments and professional development.",
+      description: "Business English programs tailored for corporate environments and professional development, including negotiation, presentation, and cross-cultural business communication.",
       icon: "💼",
     },
   ];
