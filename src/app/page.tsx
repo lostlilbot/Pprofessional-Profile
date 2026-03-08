@@ -105,16 +105,32 @@ export default function Home() {
 
   const technicalSkills = [
     {
-      name: "Linux (Ubuntu)",
-      description: "System administration, server management, and command-line operations",
+      name: "TypeScript",
+      description: "Primary language for web applications - built YOURLITTLEBOT virtual assistant, Maximus AI agent framework, ByteBliss AI content optimizer, GotTalent-Virtual, and Medpak catalog app",
     },
     {
-      name: "Legacy DOS",
-      description: "Classic operating system environment management and troubleshooting",
+      name: "Kotlin",
+      description: "Primary language for Android development - built 8 mobile apps including YoutuberHN, PIS-ROSTER scheduler, MedPack e-commerce, BountyBugger security toolkit, and DeepStudy Tor browser",
     },
     {
-      name: "Program Architecture",
-      description: "Educational program design, implementation, and scaling",
+      name: "Java",
+      description: "Android development - built PrivacyBrowser for secure browsing",
+    },
+    {
+      name: "AI/ML Integration",
+      description: "Built autonomous AI agent systems (Maximus), AI writing assistant (GhostWriter), and AI content optimization (ByteBliss)",
+    },
+    {
+      name: "Mobile Development",
+      description: "Full-stack Android development with Kotlin - 8 published apps across entertainment, education, productivity, and security",
+    },
+    {
+      name: "Web Development",
+      description: "Full-stack web development with TypeScript/Next.js - virtual assistants, AI platforms, and interactive web applications",
+    },
+    {
+      name: "Security & Privacy",
+      description: "Developed privacy tools including vulnerability testing toolkit (BountyBugger) and Tor-based private browser (DeepStudy)",
     },
   ];
 
