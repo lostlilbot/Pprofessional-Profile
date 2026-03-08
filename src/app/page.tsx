@@ -103,15 +103,42 @@ export default function Home() {
     },
   ];
 
-  const skills = [
-    "Linux (Ubuntu)",
-    "Legacy DOS",
-    "Curriculum Development",
-    "Corporate Training",
-    "Educational Leadership",
-    "Cross-Cultural Teams",
-    "Program Architecture",
-    "Crisis Management",
+  const technicalSkills = [
+    {
+      name: "Linux (Ubuntu)",
+      description: "System administration, server management, and command-line operations",
+    },
+    {
+      name: "Legacy DOS",
+      description: "Classic operating system environment management and troubleshooting",
+    },
+    {
+      name: "Program Architecture",
+      description: "Educational program design, implementation, and scaling",
+    },
+  ];
+
+  const professionalSkills = [
+    {
+      name: "Curriculum Development",
+      description: "Comprehensive K-12 and higher education curriculum design aligned with international standards",
+    },
+    {
+      name: "Corporate Training",
+      description: "Business English and professional development programs for corporate clients",
+    },
+    {
+      name: "Educational Leadership",
+      description: "Strategic leadership and management of educational institutions and programs",
+    },
+    {
+      name: "Cross-Cultural Teams",
+      description: "Leading diverse international teams across multiple continents",
+    },
+    {
+      name: "Crisis Management",
+      description: "Operational intelligence and crisis response in high-pressure environments",
+    },
   ];
 
   return (
@@ -183,21 +210,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technical Skills */}
+      {/* Technical Competencies */}
       <section className="py-16 md:py-20 bg-slate-100">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
             Technical Competencies
           </h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {skills.map((skill, index) => (
-              <span
-                key={index}
-                className="bg-slate-800 text-white px-5 py-2.5 rounded-full font-medium text-sm md:text-base"
-              >
-                {skill}
-              </span>
-            ))}
+          
+          {/* Technical Skills */}
+          <div className="mb-8">
+            <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">
+              Technical
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {technicalSkills.map((skill, index) => (
+                <details key={index} className="group">
+                  <summary className="bg-slate-800 text-white px-5 py-2.5 rounded-full font-medium text-sm md:text-base cursor-pointer list-none flex items-center gap-2 hover:bg-slate-700 transition-colors">
+                    {skill.name}
+                    <svg className="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-2 bg-slate-700 text-slate-200 px-4 py-3 rounded-lg text-sm">
+                    {skill.description}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+          
+          {/* Professional Skills */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">
+              Professional
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {professionalSkills.map((skill, index) => (
+                <details key={index} className="group">
+                  <summary className="bg-amber-500 text-slate-900 px-5 py-2.5 rounded-full font-medium text-sm md:text-base cursor-pointer list-none flex items-center gap-2 hover:bg-amber-400 transition-colors">
+                    {skill.name}
+                    <svg className="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-2 bg-amber-100 text-slate-700 px-4 py-3 rounded-lg text-sm">
+                    {skill.description}
+                  </div>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
