@@ -18,7 +18,7 @@ const inter = Inter({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0f172a",
+  themeColor: "#1e3a5f",
 };
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-slate-50 text-slate-900`}
+        className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-stone-50 text-slate-900`}
       >
         <Navigation />
         <main className="pt-16">
